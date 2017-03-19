@@ -1,0 +1,9 @@
+__author__ = "Richard Johnston"
+__copyright__ = "Copyright 2017, RJ Hobbies"
+__credits__ = ["Richard Johnston"]
+__license__ = "GPL"
+__version__ = "0.0.1"
+__maintainer__ = "Richard Johnston"
+__email__ = "r.johnston085@gmail.com"
+__status__ = "Development"
+
