@@ -7,3 +7,22 @@ __maintainer__ = "Richard Johnston"
 __email__ = "r.johnston085@gmail.com"
 __status__ = "Development"
 
+# Imports
+import requests
+from bs4 import BeautifulSoup
+
+r = requests.get("https://www.domain.com.au/auction-results/canberra/")
+soup = BeautifulSoup(r.content)
+
+# TODO - extract aution details
+# Find "aution-listings_wrap"
+# if = "scroll-group"
+# get suburb children
+# get address children
+# get details
+# ---> add to DB
+
+suburb_data = soup.find_all("div", {"class": "scroll-group__A"})
+
+for child in suburb_data[0].children:
+    print(child.text)
